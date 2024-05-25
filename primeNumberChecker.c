@@ -48,6 +48,20 @@ float findAverage(int n)
     }
     return (float)sum / count;
 }
+double findAverage(int n)
+{
+    int sum = 0;
+    int count = 0;
+    for (int i = 2; i <= n; i++)
+    {
+        if (isPrimeNumber(i))
+        {
+            sum += i;
+            count++;
+        }
+    }
+    return (double)sum / count;
+}
 
 int main()
 {
