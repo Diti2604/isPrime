@@ -63,6 +63,15 @@ double findAverage(int n)
     return (double)sum / count;
 }
 
+void printPrimeNumbers(int n)
+{
+    for (int i = 2; i <= n; i++)
+    {
+        if (isPrimeNumber(i))
+            printf("%d ", i);
+    }
+    printf("\n");
+}
 int main()
 {
 
