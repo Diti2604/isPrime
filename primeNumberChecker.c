@@ -63,5 +63,6 @@ int main()
     // trying something
     printf("Prime numbers upto %d are: ", number);
     printPrimeNumbers(number);
+    findAverage(number);
     return 0;
 }
