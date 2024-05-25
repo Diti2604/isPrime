@@ -34,6 +34,21 @@ void printPrimeNumbers(int n)
     printf("\n");
 }
 
+float findAverage(int n)
+{
+    int sum = 0;
+    int count = 0;
+    for (int i = 2; i <= n; i++)
+    {
+        if (isPrimeNumber(i))
+        {
+            sum += i;
+            count++;
+        }
+    }
+    return (float)sum / count;
+}
+
 int main()
 {
 
@@ -47,5 +62,6 @@ int main()
         printf("%d is not a prime number.\n", number);
     // trying something
     printf("Prime numbers upto %d are: ", number);
+    printPrimeNumbers(number);
     return 0;
 }
