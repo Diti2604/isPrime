@@ -72,6 +72,20 @@ void printPrimeNumbers(int n)
     }
     printf("\n");
 }
+float findAverage(int n)
+{
+    int sum = 0;
+    int count = 0;
+    for (int i = 2; i <= n; i++)
+    {
+        if (isPrimeNumber(i))
+        {
+            sum += i;
+            count++;
+        }
+    }
+    return (float)sum / count;
+}
 int main()
 {
 
