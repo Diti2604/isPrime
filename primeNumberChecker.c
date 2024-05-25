@@ -24,7 +24,15 @@ bool isPrimeNumber(int num)
     return true;
 }
 
-
+void printPrimeNumbers(int n)
+{
+    for (int i = 2; i <= n; i++)
+    {
+        if (isPrimeNumber(i))
+            printf("%d ", i);
+    }
+    printf("\n");
+}
 
 int main()
 {
@@ -38,5 +46,6 @@ int main()
     else
         printf("%d is not a prime number.\n", number);
     // trying something
+    printf("Prime numbers upto %d are: ", number);
     return 0;
 }
